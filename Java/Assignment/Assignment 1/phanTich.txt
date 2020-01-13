@@ -1,0 +1,11 @@
+Thực thể:
+	- Sinh viên (MSV,Tên,Tuổi,Quên quán,Hệ,Giới tính,...)
+	- Giáo viên (Tên,Tuổi,Quên quán,Lương,Giới tính,...)
+	- Lớp học (Tên,Thời gian bd,Thời gian kt,Môn học,Giáo viên,Số tín chỉ,Số lượng sv,...)
+	- ...
+
+Phương thức:
+	- Sinh viên: Đăng kí tín chỉ, Học bài, Làm BTVN, Xin phép nghỉ học,Đánh giá/Bình luận...
+	- Giáo viên: Giảng bài, Giao BTVN, Chấm điểm, Thông báo nghỉ học,Đánh giá/Bình luận...
+	- Lớp học:
+	
