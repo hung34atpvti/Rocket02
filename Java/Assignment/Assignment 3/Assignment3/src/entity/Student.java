@@ -21,7 +21,7 @@ public class Student {
 	public Student() {
 	}
 
-	public Student(String fullName, String id, Date date, int ra, int sd, int cp, int cut, int fmt,int avg) {
+	public Student(String fullName, String id, Date date, int ra, int sd, int cp, int cut, int fmt,double avg) {
 		this.fullName = fullName;
 		this.id = id;
 		this.date = date;
