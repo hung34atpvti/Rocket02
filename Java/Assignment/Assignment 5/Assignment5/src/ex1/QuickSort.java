@@ -12,8 +12,20 @@ public class QuickSort extends SequenceNumber implements Sort {
 	@Override
 	public void sort() {
 		// TODO Auto-generated method stub
-		
+		quickSort(x, 0, x.length-1);
 	}
+	
+	static void quickSort(int a[], int beg, int end)  
+    {  
+          
+        int loc;  
+        if(beg<end)  
+        {  
+            loc = partition(a, beg, end);  
+            quickSort(a, beg, loc-1);  
+            quickSort(a, loc+1, end);  
+        }  
+    } 
 	
 	public static int partition(int a[], int beg, int end)  
     {  
