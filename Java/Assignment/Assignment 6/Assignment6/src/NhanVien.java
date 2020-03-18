@@ -159,6 +159,7 @@ public class NhanVien implements ICalSalary {
 				if (op == option) {
 					blA = false;
 					this.allowance = e.value;
+					break;
 				} else {
 					op++;
 				}
@@ -183,6 +184,7 @@ public class NhanVien implements ICalSalary {
 					blP = false;
 					this.position = e.name();
 					this.allowance += e.value;
+					break;
 				} else {
 					op++;
 				}

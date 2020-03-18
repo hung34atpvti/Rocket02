@@ -132,6 +132,7 @@ public class GiaoSu implements ICalSalary {
 					blA = false;
 					this.academicDegree = e.name();
 					this.allowance = e.value;
+					break;
 				} else {
 					op++;
 				}
