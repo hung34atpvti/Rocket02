@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class MainApp {
-	static List<Bee> bees = new ArrayList<>();
+	static List<Bee> bees;
 
 	public static void main(String[] args) {
 
