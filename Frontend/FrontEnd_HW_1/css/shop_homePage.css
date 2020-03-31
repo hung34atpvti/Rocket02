@@ -1,0 +1,49 @@
+.nav {
+  background-color: #2F4F4F;
+  padding: 20px;
+}
+
+.nav_item {
+  display: inline-block;
+  color: white;
+  padding: 20px;
+}
+
+.nav_item_1 {
+  display: inline-block;
+  color: orange;
+  padding: 20px;
+}
+
+.item {
+  border-radius: 120px;
+  background-color: blue;
+  margin: 10px;
+  padding: 10px;
+  height: 250px;
+  width: 210px;
+  display: inline-block;
+}
+
+.item:hover {
+  background-color: #00FFFF;
+  color: #FF00FF;
+}
+
+.item_img {
+  border-radius: 120px;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.item_price {
+  color: white;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2F4F4F;
+  padding: 20px;
+}
