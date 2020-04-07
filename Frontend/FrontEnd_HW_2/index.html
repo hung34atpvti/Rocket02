@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boostrap demo</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Page level plugin JavaScript-->
+  <script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+
+  <script src="https://cdn.datatables.net/1.10.18/js/dataTables.bootstrap4.min.js"></script>
+
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+    <span style="font-size:30px">
+<b>Quản lý nhân viên</b>
+    </span>
+    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Họ tên</th>
+          <th>Khoa / Phòng ban</th>
+          <th>Trình độ / Chức vụ</th>
+          <th>Phụ cấp</th>
+          <th>Số tiết dạy / Ngày công</th>
+          <th>Tổng lương</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>Pham Hai</td>
+          <td>Toán</td>
+          <td>Cử Nhân</td>
+          <td>2000</td>
+          <td>2</td>
+          <td>7000000</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Dang Huong</td>
+          <td>Đào tạo</td>
+          <td>Nhân viên</td>
+          <td>2000</td>
+          <td>3</td>
+          <td>6000000</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Hoang Viet Thang</td>
+          <td>Lý</td>
+          <td>Cử Nhân</td>
+          <td>2000</td>
+          <td>3</td>
+          <td>5000000</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Nguyen Trung Kien</td>
+          <td>Đào tạo</td>
+          <td>Phó phòng</td>
+          <td>2000</td>
+          <td>4</td>
+          <td>9000000</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>Trần Thục Quyên</td>
+          <td>Đào tạo</td>
+          <td>Cử Nhân</td>
+          <td>2000</td>
+          <td>4</td>
+          <td>10000000</td>
+        </tr>
+      </tbody>
+    </table>
+<br>
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-default">Tên nhân viên</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <button type="button" class="btn btn-outline-primary">Load data</button>
+  <button type="button" class="btn btn-outline-secondary">Thêm nhân viên</button>
+  <button type="button" class="btn btn-outline-success">Sắp xếp</button>
+    </div>
+  </div>
+
+
+
+  <script>
+$(function () {
+    $('#dataTable').DataTable({
+      "pageLength": 3,
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": false,
+      "autoWidth": false
+      });
+  });
+</script>
+</body>
+
+</html>
