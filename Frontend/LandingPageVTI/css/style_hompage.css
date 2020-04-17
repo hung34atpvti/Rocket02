@@ -1,0 +1,272 @@
+.fixPosition {
+  position: fixed;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.footer_content{
+  font-size: 14px;
+  padding: 0;
+
+}
+
+.footer_list{
+  list-style-type: none;
+}
+
+.wwd_header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+@media (max-width: 768px) .wwd_header p {
+  font-size: 25px;
+  line-height: 25px;
+}
+
+@media (max-width: 1333px) .wwd_header p {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.wwd_header p {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wwd_header p:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  padding-top: 17px;
+  width: 100px;
+  border-bottom: 3px solid #ff8800;
+}
+
+.wwd_content_item {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  min-height: 450px;
+  height: 100%;
+}
+
+.wwd_content_box {
+  display: grid;
+  grid-template-rows: auto auto 20px;
+}
+
+.wwd_ct_link {
+  color: #ff8800;
+  text-decoration: none;
+  text-align: right;
+  margin: 0px;
+  line-height: 20px;
+}
+
+.wwd_content_head13 {
+  display: grid;
+  grid-template-columns: auto 70px;
+  align-items: center;
+}
+
+.wwd_content_head31 {
+  display: grid;
+  grid-template-columns: 70px auto;
+  align-items: center;
+}
+
+.wwd_ct_header {
+  font-size: 20px;
+  line-height: 31px;
+  font-weight: bold;
+  padding: 0px 8px;
+}
+
+.wwd_ct_icon {
+  margin: auto;
+}
+
+.wwd_ct_detail {
+  font-size: 18px;
+  line-height: 24px;
+  padding-top: 20px;
+  margin: 0;
+}
+
+.wwd_center {
+  background-image: url(https://vtiacademy.edu.vn/vti_academy_website/static/src/img/wedo_center.png);
+  width: 100%;
+  max-width: 450px;
+  height: 415px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  color: white;
+}
+
+.wwd_content21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.wwd_ct_link {
+    color: #ff8800;
+    text-decoration: none;
+    text-align: right;
+    margin: 0px;
+    line-height: 20px;
+}
+
+.home_bussiness {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_bussiness_items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item .card :hover{
+
+}
+
+u {
+  font-size: 18px;
+  text-decoration: none;
+  border-bottom: 3px solid;
+  padding-bottom: 10px;
+}
+
+u:hover {
+  color: #c94a53;
+}
+
+#navbar_menu1 {
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+#navbar_menu2 {
+  width: 100%;
+}
+
+.o_footer {
+    background-color: #F9F9F9 !important;
+    color: #212529;
+}
+
+.pt16 {
+    padding-top: 16px !important;
+}
+.pb8 {
+    padding-bottom: 8px !important;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.o_footer_copyright {
+    padding: 8px;
+}
+
+
+/* ---------------------------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+  /* show 4 items */
+  .carousel-inner .active,
+  .carousel-inner .active + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item,
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  /* farthest right hidden item must be absolue position for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
