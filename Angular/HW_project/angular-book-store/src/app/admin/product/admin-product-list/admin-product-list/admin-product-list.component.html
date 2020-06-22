@@ -1,0 +1,24 @@
+<div class="fit-body">
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Author</th> 
+            <th>Action</th>          
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of products">
+            <td>{{p.$key}}</td>
+            <td><img style="width: 80px; height: 80px;" [src]="p.imageUrl" [alt]="p.title"></td>
+            <td>{{p.title}}</td>
+            <td>{{p.author}}</td>
+            <td><button type="button" class="btn btn-info" (click)="viewDetail(p)">Detail</button></td>
+          </tr>
+          
+        </tbody>
+      </table>
+<app-admin-product-detail [product]="selectedProduct"></app-admin-product-detail>
+</div>
