@@ -1,4 +1,5 @@
 <div class="fit-body">
+  <button (click)="newForm()" class="btn btn-success">Add Product</button>
     <table class="table table-hover">
         <thead>
           <tr>
@@ -21,4 +22,5 @@
         </tbody>
       </table>
 <app-admin-product-detail [product]="selectedProduct"></app-admin-product-detail>
+<app-admin-product-form *ngIf="isForm"></app-admin-product-form>
 </div>
