@@ -17,6 +17,6 @@ export class ProductDetailComponent implements OnInit, OnChanges {
   
 
   ngOnChanges(productId: { previousValue; currentValue; firstChange }) {
-    this.product = products.find((ele) => ele.$key === this.productId);
+    this.product = products.find((ele) => ele.id === this.productId);
   }
 }

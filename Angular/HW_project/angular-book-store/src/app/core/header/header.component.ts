@@ -8,7 +8,7 @@ import { AppUser } from 'src/app/shared/models/app-user';
 })
 export class HeaderComponent implements OnInit {
   user: AppUser = {
-    $key: '1',
+    id: '1',
     name: 'Tống Minh Giang',
     email: 'monkeytgoku@gmail.com',
     mobile: '0949348386',

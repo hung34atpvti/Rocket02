@@ -2,7 +2,7 @@
   class="needs-validation"
   [formGroup]="productForm"
   novalidate
-  (ngSubmit)="addProduct(productForm)"
+  (ngSubmit)="submit(productForm)"
 >
   <div class="row">
     <div class="col-md-5">
@@ -26,7 +26,7 @@
           <label for="inputPublisher">Publisher</label>
           <select class="form-control" formControlName="publisher">
             <option selected></option>
-            <option *ngFor="let p of publishers" [value]="p.id">{{
+            <option *ngFor="let p of publishers" [value]="p.value">{{
               p.value
             }}</option>
           </select>
@@ -147,13 +147,16 @@
       </div>
 
       <br />
-      <button type="button" class="btn btn-primary" [disabled]="productForm.invalid" 
-                    (click)="addProduct(productForm)">Add product</button>
+      <button
+        
+        type="button"
+        class="btn btn-primary"
+        [disabled]="productForm.invalid || productForm.pristine"
+        (click)="submit(productForm)"
+      >
+        Update
+      </button>
       
     </div>
   </div>
 </form>
-
-  <!-- <button type="button" class="btn btn-primary" [disabled]="addForm.invalid" 
-                    (click)="addProduct(addForm)">Add product</button> -->
-     

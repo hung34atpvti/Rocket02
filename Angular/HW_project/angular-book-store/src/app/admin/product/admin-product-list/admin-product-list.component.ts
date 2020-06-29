@@ -12,16 +12,23 @@ export class AdminProductListComponent implements OnInit {
   @Output() selectedProduct: Product;
   products: Product[] = [];
   isForm: boolean;
+  isUpdate: boolean;
 
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
-    this.products = products;
+    this.productService
+      .getProducts()
+      .subscribe((result) => (this.products = result));
+    this.isForm = false;
+    this.isUpdate = false;
+    this.selectedProduct = null;
+    // this.products = products;
 
-    this.productService.$newProduct.subscribe(p=>{
-      products.push(p);
-      this.isForm = false;
-    });
+    // this.productService.$newProduct.subscribe(p=>{
+    //   products.push(p);
+    //   this.isForm = false;
+    // });
   }
 
   viewDetail(p): void {
@@ -30,5 +37,23 @@ export class AdminProductListComponent implements OnInit {
 
   newForm(): void {
     this.isForm = true;
+    this.isUpdate = false;
+  }
+
+  editProduct(product: Product) {
+    this.selectedProduct = product;
+    this.isForm = false;
+    this.isUpdate = true;
+    console.log(this.selectedProduct);
+    
+  }
+
+  deleteProduct(product: Product) {
+    const res = confirm('Are you sure you want to delete?');
+    if (res) {
+      this.productService
+        .deleteProduct(product.id)
+        .subscribe((result) => console.log(result));
+    }
   }
 }
